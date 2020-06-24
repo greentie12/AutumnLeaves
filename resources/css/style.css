@@ -1,0 +1,131 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main nav {
+  background-color: #9ea779;
+  width: 90%;
+}
+
+.main ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main li {
+  display: inline-block;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+.main {
+  background-image: url("../img/autumn-leaves.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30rem;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 6rem;
+  background-color: #dad2c5;
+  opacity: 0.7;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+  display: inline-block;
+  color: #8d001c;
+}
+
+.logo i {
+  color: #cd3151;
+}
+
+.banner {
+  background-color: #ec8f38;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.banner h1 {
+  color: #ffffff;
+  display: inline-block;
+}
+
+figure {
+  width: 40%;
+  padding-bottom: 3rem;
+}
+
+.gallery {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  background-color: #d9d0bf;
+}
+
+.gallery figure img {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+footer {
+  background-color: #9ea779;
+  text-align: center;
+  color: #8d001c;
+}
+
+footer p {
+  display: inline-block;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 920px) {
+  .main {
+    height: 20rem;
+  }
+
+  .banner h1 {
+    font-size: 1.7rem;
+    padding: 0 20px;
+  }
+
+  .gallery figure img {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .gallery {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #d9d0bf;
+  }
+
+  figure {
+    width: 75%;
+    padding-bottom: 0rem;
+  }
+
+  .gallery figure img {
+    padding-bottom: 0.5rem;
+  }
+}
